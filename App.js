@@ -18,16 +18,8 @@ export default function App() {
         <Stack.Navigator screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="Restaurant" component={Restaurant} />
-          <Stack.Screen
-            name="Basket"
-            component={Basket}
-            options={{ presentation: "modal" }}
-          />
-          <Stack.Screen
-            name="PreparingOrder"
-            component={PreparingOrder}
-            options={{ presentation: "fullScreenModal" }}
-          />
+          <Stack.Screen name="Basket" component={Basket} />
+          <Stack.Screen name="PreparingOrder" component={PreparingOrder} />
           <Stack.Screen name="Delivery" component={Delivery} />
         </Stack.Navigator>
       </Provider>
